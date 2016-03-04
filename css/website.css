@@ -6,35 +6,35 @@
 	position:relative;
 }
 
-.bio {
+#bio {
 	background-color: #1abc9c;
 	color: #ffffff;
 }
 
-.skills {
+#skills {
 	background-color: #474e5d;
 	color: #ffffff;
 }
-.work {
+#work {
 	background-color: #ffffff;
 	color: #555555;
 }
 
-.project {
+#project {
 	background-color: #1abc9c;
 	color: #ffffff;
 }
 
-.school {
+#school {
 	background-color: #474e5d;
 	color: #ffffff;
 }
-.volunteer {
+#volunteer {
 	background-color: #ffffff;
 	color: #555555;
 }
 
-.footer {
+#footer {
 	background-color: #1abc9c;
 	color: #ffffff;
 }
