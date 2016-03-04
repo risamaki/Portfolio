@@ -1,0 +1,42 @@
+
+.container-fluid {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
+	position:relative;
+}
+
+.bio {
+	background-color: #1abc9c;
+	color: #ffffff;
+}
+
+.skills {
+	background-color: #474e5d;
+	color: #ffffff;
+}
+.work {
+	background-color: #ffffff;
+	color: #555555;
+}
+
+.project {
+	background-color: #1abc9c;
+	color: #ffffff;
+}
+
+.school {
+	background-color: #474e5d;
+	color: #ffffff;
+}
+.volunteer {
+	background-color: #ffffff;
+	color: #555555;
+}
+
+.footer {
+	background-color: #1abc9c;
+	color: #ffffff;
+}
+
+
