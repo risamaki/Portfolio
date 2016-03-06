@@ -24,17 +24,32 @@ body {
     float:left;
 }
 /** Header Styling **/
+/** good link color: #ffaaa5 **/
 
 nav.navbar.navbar-custom {
     padding-top:20px;
 }
+
+nav.navbar.navbar-custom .navbar-header .navbar-brand{
+    margin-left:80px;
+    font-size:30px;
+    color:#555555;
+
+}
+
+ul.nav.navbar-nav.navbar-right{
+    margin-right:100px;
+}
+
 ul.nav.navbar-nav.navbar-right li a {
-    color:black;
+    color:#555555;
+    padding-right: 50px;
+    font-size:15px;
 }
 
 /** Intro Styling **/
 .intro {
-	background-color: #ffaaa5;
+	background-color: #8d8d8d;
 	width: 100%;
 	color: #ffffff;
     padding-top: 120px;
@@ -49,17 +64,17 @@ ul.nav.navbar-nav.navbar-right li a {
 }
 
 #skills {
-	background-color: #8d8d8d;
-	color: #ffffff;
+	background-color: #fff;
+	color: black;
 }
 #experience {
-	background-color: #ffffff;
-	color: #555555;
+	background-color: #8d8d8d;
+	color:#fff ;
 }
 
 #project {
-	background-color: #ffaaa5;
-	color: #ffffff;
+	background-color: #fff;
+	color: #555555;
 }
 
 #school {
