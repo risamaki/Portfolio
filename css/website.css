@@ -1,3 +1,7 @@
+/** Overall **/
+body {
+    background-color:white;
+}
 
 .container-fluid {
 	padding-top: 10px;
@@ -10,21 +14,6 @@
     padding-bottom: 50px;
 }
 
-.intro {
-	background-color: #ffaaa5;
-	width: 100%;
-	color: #ffffff;
-    padding-top: 100px;
-    padding-bottom: 70px;
-    position:relative;
-}
-
-.intro #introContent {
-	margin:0 auto;
-	width:960px;
-    text-align: center;
-}
-
 .col-2 {
     width:50%;
     float:left;
@@ -33,6 +22,30 @@
 .col-3 {
     width:33.3%;
     float:left;
+}
+/** Header Styling **/
+
+nav.navbar.navbar-custom {
+    padding-top:20px;
+}
+ul.nav.navbar-nav.navbar-right li a {
+    color:black;
+}
+
+/** Intro Styling **/
+.intro {
+	background-color: #ffaaa5;
+	width: 100%;
+	color: #ffffff;
+    padding-top: 120px;
+    padding-bottom: 70px;
+    position:relative;
+}
+
+.intro #introContent {
+	margin:0 auto;
+	width:960px;
+    text-align: center;
 }
 
 #skills {
@@ -54,8 +67,10 @@
 	color: #ffffff;
 }
 #footer {
-	background-color: #ffaaa5;
-	color: #ffffff;
+	background: black;
+    text-align:center;
+    padding:40px 0;
+	color: #fff;
 }
 
 
