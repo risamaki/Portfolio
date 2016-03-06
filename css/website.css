@@ -23,29 +23,7 @@ body {
     width:33.3%;
     float:left;
 }
-/** Header Styling **/
-/** good link color: #ffaaa5 **/
 
-nav.navbar.navbar-custom {
-    padding-top:20px;
-}
-
-nav.navbar.navbar-custom .navbar-header .navbar-brand{
-    margin-left:80px;
-    font-size:30px;
-    color:#555555;
-
-}
-
-ul.nav.navbar-nav.navbar-right{
-    margin-right:100px;
-}
-
-ul.nav.navbar-nav.navbar-right li a {
-    color:#555555;
-    padding-right: 50px;
-    font-size:15px;
-}
 
 /** Intro Styling **/
 .intro {
