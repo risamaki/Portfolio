@@ -1,12 +1,8 @@
 .section {
-    display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: column;
     flex-direction: column;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-align-items: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .section:nth-of-type(odd):not(:first-child) {
@@ -17,7 +13,7 @@
 .section--menu {
     position: relative;
     overflow: hidden;
-    min-height: 20vh;
+    min-height: 80px;
     padding: 0;
 }
 .section__title {
@@ -34,7 +30,7 @@
 
 .menu {
     line-height: 1;
-    padding: 0;
+    padding-top:10px;
 }
 
 .menu__list {
@@ -43,8 +39,8 @@
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 0;
     list-style: none;
+    padding-right: 40px;
 }
 
 .menu__item {
