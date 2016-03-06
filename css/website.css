@@ -6,13 +6,19 @@
 	position:relative;
 }
 
-#bio {
-	background-color: #1abc9c;
+#intro {
+	background-color: #ffaaa5;
+	width: 100%;
 	color: #ffffff;
 }
 
+#intro #introContent {
+	margin:0 auto;
+	width:960px;
+}
+
 #skills {
-	background-color: #474e5d;
+	background-color: #8d8d8d;
 	color: #ffffff;
 }
 #work {
@@ -21,21 +27,16 @@
 }
 
 #project {
-	background-color: #1abc9c;
+	background-color: #ffaaa5;
 	color: #ffffff;
 }
 
 #school {
-	background-color: #474e5d;
+	background-color: #8d8d8d;
 	color: #ffffff;
 }
-#volunteer {
-	background-color: #ffffff;
-	color: #555555;
-}
-
 #footer {
-	background-color: #1abc9c;
+	background-color: #ffaaa5;
 	color: #ffffff;
 }
 
