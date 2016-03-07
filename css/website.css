@@ -60,5 +60,13 @@ body {
 	color: #ffffff;
 }
 
-
-
+.footer {
+    background: white;
+    text-align:center;
+    margin:20px 20px;
+    color: #555555;
+}
+.footer a {
+    margin-right:10px;
+    margin-left:10px;
+}
