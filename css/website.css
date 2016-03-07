@@ -69,4 +69,16 @@ body {
 .footer a {
     margin-right:10px;
     margin-left:10px;
+    color:black;
+}
+.footer a:hover {
+    color:#d94f5c;
+    text-decoration: none;
+}
+
+.email i {
+    margin-bottom: 10px;
+    margin-right:5px;
+    color:black;
+
 }
