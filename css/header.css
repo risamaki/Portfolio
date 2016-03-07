@@ -37,7 +37,6 @@
     postion: relative;
     float: right;
 }
-
 .menu__list {
     position: relative;
     display: -webkit-flex;
