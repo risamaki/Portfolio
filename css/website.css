@@ -65,6 +65,14 @@ body {
     text-align:center;
     margin:20px 20px;
     color: #555555;
+
+}
+.footer-container {
+    justify-content: center;
+    position: relative;
+    text-align:center;
+    display:inline-block;
+    align-items: center;
 }
 .footer a {
     margin-right:10px;
@@ -80,5 +88,6 @@ body {
     margin-bottom: 10px;
     margin-right:5px;
     color:black;
+
 
 }
