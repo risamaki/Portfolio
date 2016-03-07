@@ -14,30 +14,25 @@
 	<!-- script src ="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"-->
 	</head>
 <body>
-    <!-- Menu bar / Header -->
-    <section class="section section--menu" >
+<!-- Intro page -->
+    <!-- Header -->
+    <!--<header class="header">-->
+        <!--<div class="bg-img"><img src="img/7.jpg" alt="Background Image"/></div>-->
+    <!--</header>-->
+    <!--Nav Bar-->
+    <section class="color-1">
         <div class="section__title">Marissa Tamaki</div>
-        <span class="link-copy"></span>
-        <nav class="menu menu--iris">
-            <ul class="menu__list">
-                <li class="menu__item menu__item--current"><a href="#" class="menu__link">Home</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Skills</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Experience</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Projects</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Contact Me</a></li>
-            </ul>
+        <nav class="cl-effect-1">
+            <a href="#footer">Contact Me</a>
+            <a href="#project">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#">Home</a>
         </nav>
     </section>
-
-    <!-- Intro page -->
-    <div class="intro">
-        <div id="introContent">
-            <img src="img/coffe_128.png" class="img-circle" alt="Sample Coffee Cup for Test">
-        </div>
-    </div>
     <!-- Main page -->
     <div class="main-container">
-        <div class="container-fluid" id="skills">
+        <div class="container-fluid" name="skills" id="skills">
             <h3> Technical Skills </h3> <!-- Will change this up to include either a list with a rating etc, how to do P&R stuff? -->
                 <div class="col-3">Column #1</div>
                 <div class="col-3">Column #2</div>
@@ -64,7 +59,7 @@
         </div>
     </div>
     <!-- Footer -->
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="footer-container">
             <div class="copyright_name">
                 <p> &copy 2016 | Marissa Tamaki</p>
@@ -76,44 +71,5 @@
                 <a href="#" class="fa fa-linkedin fa-2x"></a>
         </div>
     </div>
-
-    <!-- Scripts -->
-
-    <script>
-        (function() {
-            [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
-                var menuItems = menu.querySelectorAll('.menu__link'),
-                        setCurrent = function(ev) {
-                            ev.preventDefault();
-
-                            var item = ev.target.parentNode; // li
-
-                            // return if already current
-                            if (classie.has(item, 'menu__item--current')) {
-                                return false;
-                            }
-                            // remove current
-                            classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
-                            // set current
-                            classie.add(item, 'menu__item--current');
-                        };
-
-                [].slice.call(menuItems).forEach(function(el) {
-                    el.addEventListener('click', setCurrent);
-                });
-            });
-                <!-- might need to do something about this part because it uses link-->
-            [].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
-                link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
-                new Clipboard(link);
-                link.addEventListener('click', function() {
-                    classie.add(link, 'link-copy--animate');
-                    setTimeout(function() {
-                        classie.remove(link, 'link-copy--animate');
-                    }, 300);
-                });
-            });
-        })(window);
-    </script>
 </body>
 </html>

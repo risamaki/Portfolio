@@ -24,41 +24,38 @@ body {
     float:left;
 }
 
-
 /** Intro Styling **/
-.intro {
+.header {
 	background-color: #8d8d8d;
 	width: 100%;
 	color: #ffffff;
-    padding-top: 120px;
-    padding-bottom: 70px;
+    height: 100vh;
     position:relative;
+    position: relative;
+    margin: 0 auto;
+    min-height: 560px;
 }
 
-.intro #introContent {
-	margin:0 auto;
-	width:960px;
-    text-align: center;
+.bg-img {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
-#skills {
-	background-color: #fff;
-	color: black;
-}
-#experience {
+#skills, #project {
 	background-color: #8d8d8d;
-	color:#fff ;
+    color:#fff ;
 }
-
-#project {
+#experience,#school  {
 	background-color: #fff;
-	color: #555555;
+	color:black;
 }
 
-#school {
-	background-color: #8d8d8d;
-	color: #ffffff;
-}
 
 .footer {
     background: white;

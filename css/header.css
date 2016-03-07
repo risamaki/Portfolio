@@ -1,15 +1,7 @@
-.section:nth-of-type(odd):not(:first-child) {
-    color: #fff;
-    background: #2a282b;
-}
-
-.section--menu {
-    position: relative;
-    overflow: hidden;
+.color-1 {
     min-height: 80px;
-    padding: 0;
+    background:#fff;
 }
-
 .section__title {
     font-size: 30px;
     font-weight: 700;
@@ -22,110 +14,75 @@
     display: inline;
     postion: relative;
     float: left;
+    padding-right: 50px;
     padding-left: 50px;
     padding-top:20px;
 }
 
-.menu {
-    line-height: 1;
-    padding-top:20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    display: inline;
-    postion: relative;
-    float: right;
-}
-.menu__list {
-    position: relative;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    list-style: none;
-    padding-right: 40px;
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.menu__item {
+nav a {
+    position: relative;
     display: inline-block;
-    margin: 1em 0;
-}
-
-.menu__link {
-    font-size: 1.05em;
-    font-weight: bold;
-    display: block;
-    padding: 1em;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-.menu__link:hover,
-.menu__link:focus {
+    margin: 30px 15px;
     outline: none;
-}
-
-.menu--iris .menu__item {
-    margin: 0 1em;
-}
-
-.menu--iris .menu__link {
-    position: relative;
-    text-align: center;
     color: #b5b5b5;
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1.15em;
+    float:right;
 }
 
-.menu--iris .menu__link:hover,
-.menu--iris .menu__link:focus {
-    color: #929292;
+nav a:hover,
+nav a:focus {
+    outline: none;
+    text-decoration:none;
+    color:#d94f5c;
 }
 
-.menu--iris .menu__item--current .menu__link {
-    color: #d94f5c;
-}
-
-.menu--iris .menu__link::before,
-.menu--iris .menu__link::after {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
+/* Effect 1: Brackets */
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+    display: inline-block;
     opacity: 0;
-    border: 2px solid #d94f5c;
-    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-    transition: transform 0.3s, opacity 0.3s;
-    -webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
-    transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
 }
 
-.menu--iris .menu__link::before {
-    top: 0;
-    left: 0;
-    border-width: 2px 0 0 2px;
-    -webkit-transform: translate3d(10px, 10px, 0);
-    transform: translate3d(10px, 10px, 0);
+.cl-effect-1 a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
 }
 
-.menu--iris .menu__link::after {
-    right: 0;
-    bottom: 0;
-    border-width: 0 2px 2px 0;
-    -webkit-transform: translate3d(-10px, -10px, 0);
-    transform: translate3d(-10px, -10px, 0);
+.cl-effect-1 a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
 }
 
-.menu--iris .menu__item--current .menu__link::before,
-.menu--iris .menu__item--current .menu__link::after {
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+    text-decoration:none;
+    color:#d94f5c;
 }
+
