@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
-	<title> My Portfolio </title>
+	<title> Marissa Tamaki </title>
 	<!-- meta charset ="utf-8"-->
 	<!-- meta "viewport" content="width=device-width, intial-scale=1"-->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/website.css">
     <link rel="stylesheet" href="css/header.css">
+    <script language="JavaScript" type="text/javascript" src="js/classie.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/clipboard.min.js"></script>
 	<!-- script src ="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"-->
 	</head>
 <body>
@@ -77,8 +79,8 @@
         </div><!-- .container -->
     </div>
 
-    <script src="js/classie.js"></script>
-    <script src="js/clipboard.min.js"></script>
+    <!-- Scripts -->
+
     <script>
         (function() {
             [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
@@ -102,7 +104,7 @@
                     el.addEventListener('click', setCurrent);
                 });
             });
-
+                <!-- might need to do something about this part because it uses link-->
             [].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
                 link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
                 new Clipboard(link);
