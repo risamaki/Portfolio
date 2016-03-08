@@ -74,7 +74,7 @@ body {
     outline: none;
     text-decoration: none;
     position: relative;
-    font-size: 8em;
+    font-size: 7em;
     line-height: 1;
     color: #d1d1d1;
     display: inline-block;
@@ -87,6 +87,8 @@ body {
     text-transform: uppercase;
     overflow: hidden;
     padding: 10px 0;
+    margin-bottom:40px;
+    margin-top:40px;
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
     height:120px;
@@ -104,7 +106,7 @@ body {
     width: 53%;
     height: 5px;
     background: #d1d1d1;
-    bottom: 0;
+    bottom: 10%;
     left: 27%;
     -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
