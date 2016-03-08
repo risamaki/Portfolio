@@ -16,7 +16,7 @@
     float: left;
     padding-right: 50px;
     padding-left: 50px;
-    padding-top:20px;
+    padding-top:10px;
 }
 
 *,
@@ -30,7 +30,10 @@
 nav a {
     position: relative;
     display: inline-block;
-    margin: 30px 15px;
+    margin-right:15px;
+    margin-left:15px;
+    margin-bottom: 30px;
+    margin-top:20px;
     outline: none;
     color: #b5b5b5;
     text-decoration: none;

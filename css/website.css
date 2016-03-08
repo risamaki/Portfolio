@@ -49,7 +49,7 @@ body {
 
 /* General link styles */
 .grid__item {
-    min-height: 96vh;
+    min-height: 95vh;
     max-width: calc(100vw);
     background: #8d8d8d;
     margin: 20px;
