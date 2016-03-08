@@ -47,6 +47,107 @@ body {
     backface-visibility: hidden;
 }
 
+/* General link styles */
+.grid__item {
+    min-height: 96vh;
+    max-width: calc(100vw);
+    background: #8d8d8d;
+    margin: 20px;
+    padding: 100px 0;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-transform: translate3d(0,0,0); /* Solves Safari bug because of SVG clipping mask */
+}
+
+.color-3 {
+    backround:#8d8d8d;
+}
+
+.link {
+    outline: none;
+    text-decoration: none;
+    position: relative;
+    font-size: 8em;
+    line-height: 1;
+    color: #d1d1d1;
+    display: inline-block;
+}
+
+/* Nukun */
+.link--nukun {
+    color: #d1d1d1;
+    font-weight: 900;
+    text-transform: uppercase;
+    overflow: hidden;
+    padding: 10px 0;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    height:120px;
+}
+
+.link--nukun:hover {
+    color: #1e1a1b;
+    text-decoration: none;
+}
+
+.link--nukun::before,
+.link--nukun::after {
+    content: '';
+    position: absolute;
+    width: 28%;
+    height: 5px;
+    background: #d1d1d1;
+    bottom: 0;
+    left: 38%;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+    transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
+
+.link--nukun::after {
+    background: #d94f5c;
+    -webkit-transform: translate3d(-300%,0,0) scale3d(0,1,1);
+    transform: translate3d(-300%,0,0) scale3d(0,1,1);
+}
+
+.link--nukun:hover::before {
+    -webkit-transform: translate3d(300%,0,0) scale3d(0,1,1);
+    transform: translate3d(300%,0,0) scale3d(0,1,1);
+}
+
+.link--nukun:hover::after {
+    -webkit-transform: translate3d(0,0,0) scale3d(1,1,1);
+    transform: translate3d(0,0,0) scale3d(1,1,1);
+}
+
+.link--nukun span {
+    color: #d1d1d1;
+    display: inline-block;
+    position: relative;
+    -webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+    transform: perspective(1000px) rotate3d(0,1,0,0deg);
+    -webkit-transition: -webkit-transform 0.5s, color 0.5s;
+    transition: transform 0.5s, color 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+    transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
+
+.link--nukun:hover span {
+    color: #fff;
+    -webkit-transform: perspective(1000px) rotate3d(0,1,0,180deg);
+    transform: perspective(1000px) rotate3d(0,1,0,180deg);
+}
+
+/** Main Sections **/
+
 #skills, #project {
     background-color: #fff;
     color:black;
@@ -55,7 +156,6 @@ body {
     background-color: #8d8d8d;
     color:#fff ;
 }
-
 
 .footer {
     background: white;
@@ -85,6 +185,5 @@ body {
     margin-bottom: 10px;
     margin-right:5px;
     color:black;
-
 
 }
