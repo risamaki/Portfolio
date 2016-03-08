@@ -101,11 +101,11 @@ body {
 .link--nukun::after {
     content: '';
     position: absolute;
-    width: 28%;
+    width: 53%;
     height: 5px;
     background: #d1d1d1;
     bottom: 0;
-    left: 38%;
+    left: 27%;
     -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
     -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
