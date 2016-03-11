@@ -48,7 +48,7 @@ body {
 }
 
 /* General link styles */
-.grid__item {
+.header-grid {
     min-height: 95vh;
     max-width: calc(100vw);
     background: #8d8d8d;
@@ -66,7 +66,7 @@ body {
     -webkit-transform: translate3d(0,0,0); /* Solves Safari bug because of SVG clipping mask */
 }
 
-.color-3 {
+.header-color {
     backround:#8d8d8d;
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 /* Nukun */
-.link--nukun {
+.header-link {
     color: #d1d1d1;
     font-weight: 900;
     text-transform: uppercase;
@@ -94,13 +94,13 @@ body {
     height:120px;
 }
 
-.link--nukun:hover {
+.header-link:hover {
     color: #1e1a1b;
     text-decoration: none;
 }
 
-.link--nukun::before,
-.link--nukun::after {
+.header-link::before,
+.header-link::after {
     content: '';
     position: absolute;
     width: 53%;
@@ -114,23 +114,23 @@ body {
     transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 }
 
-.link--nukun::after {
+.header-link::after {
     background: #d94f5c;
     -webkit-transform: translate3d(-300%,0,0) scale3d(0,1,1);
     transform: translate3d(-300%,0,0) scale3d(0,1,1);
 }
 
-.link--nukun:hover::before {
+.header-link:hover::before {
     -webkit-transform: translate3d(300%,0,0) scale3d(0,1,1);
     transform: translate3d(300%,0,0) scale3d(0,1,1);
 }
 
-.link--nukun:hover::after {
+.header-link:hover::after {
     -webkit-transform: translate3d(0,0,0) scale3d(1,1,1);
     transform: translate3d(0,0,0) scale3d(1,1,1);
 }
 
-.link--nukun span {
+.header-link span {
     color: #d1d1d1;
     display: inline-block;
     position: relative;
@@ -142,7 +142,7 @@ body {
     transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 }
 
-.link--nukun:hover span {
+.header-link:hover span {
     color: #fff;
     -webkit-transform: perspective(1000px) rotate3d(0,1,0,180deg);
     transform: perspective(1000px) rotate3d(0,1,0,180deg);

@@ -1,8 +1,8 @@
-.color-1 {
+.top-menu{
     min-height: 80px;
     background:#fff;
 }
-.section__title {
+.menu-title {
     font-size: 30px;
     font-weight: 700;
     flex: none;
@@ -49,8 +49,8 @@ nav a:focus {
 }
 
 /* Effect 1: Brackets */
-.cl-effect-1 a::before,
-.cl-effect-1 a::after {
+.menu-effect a::before,
+.menu-effect a::after {
     display: inline-block;
     opacity: 0;
     -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
@@ -58,7 +58,7 @@ nav a:focus {
     transition: transform 0.3s, opacity 0.2s;
 }
 
-.cl-effect-1 a::before {
+.menu-effect a::before {
     margin-right: 10px;
     content: '[';
     -webkit-transform: translateX(20px);
@@ -66,7 +66,7 @@ nav a:focus {
     transform: translateX(20px);
 }
 
-.cl-effect-1 a::after {
+.menu-effect a::after {
     margin-left: 10px;
     content: ']';
     -webkit-transform: translateX(-20px);
@@ -74,10 +74,10 @@ nav a:focus {
     transform: translateX(-20px);
 }
 
-.cl-effect-1 a:hover::before,
-.cl-effect-1 a:hover::after,
-.cl-effect-1 a:focus::before,
-.cl-effect-1 a:focus::after {
+.menu-effect a:hover::before,
+.menu-effect a:hover::after,
+.menu-effect a:focus::before,
+.menu-effect a:focus::after {
     opacity: 1;
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
