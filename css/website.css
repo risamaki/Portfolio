@@ -79,7 +79,7 @@ body {
 
 /* Nukun */
 .header-link {
-    color: #d1d1d1;
+    color: #fff;
     font-weight: 900;
     text-transform: uppercase;
     overflow: hidden;
@@ -102,7 +102,7 @@ body {
     position: absolute;
     width: 53%;
     height: 5px;
-    background: #d1d1d1;
+    background: #fff;
     bottom: 10%;
     left: 27%;
     -webkit-transition: -webkit-transform 0.5s;
@@ -128,7 +128,7 @@ body {
 }
 
 .header-link span {
-    color: #d1d1d1;
+    color: #fff;
     display: inline-block;
     position: relative;
     -webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
