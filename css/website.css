@@ -51,7 +51,8 @@ body {
 .header-grid {
     min-height: 95vh;
     max-width: calc(100vw);
-    background: #8d8d8d;
+    background:#8d8d8d ;
+    /**background-image: url(https://source.unsplash.com/aOC7TSLb1o8/1640x900); **/
     margin: 20px;
     padding: 100px 0;
     z-index: 1;
@@ -64,10 +65,6 @@ body {
     -webkit-justify-content: center;
     justify-content: center;
     -webkit-transform: translate3d(0,0,0); /* Solves Safari bug because of SVG clipping mask */
-}
-
-.header-color {
-    backround:#8d8d8d;
 }
 
 .link {
