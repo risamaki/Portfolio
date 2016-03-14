@@ -14,6 +14,23 @@ body {
     padding-bottom: 50px;
 }
 
+.container-fluid .section-title{
+    font-size:25px;
+    font-weight:600;
+    flex:none; /** lets all flexible items be the same length **/
+    margin:0;
+    text-ident:3px;
+    letter-spacing:10px;
+    text-transform: uppercase;
+    display:inline;  /** inline = can be on the same line as something else **/
+    float:left;
+    position:relative;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top:20px;
+
+}
+
 .col-2 {
     width:50%;
     float:left;
