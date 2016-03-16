@@ -15,7 +15,7 @@ body {
 }
 
 .container-fluid .section-title{
-    font-size:25px;
+    font-size:20px;
     font-weight:600;
     flex:none; /** lets all flexible items be the same length **/
     margin:0;
@@ -28,6 +28,7 @@ body {
     padding-right: 50px;
     padding-left: 50px;
     padding-top:20px;
+    overflow:hidden;
 
 }
 
@@ -172,7 +173,177 @@ body {
     background-color: #8d8d8d;
     color:#fff ;
 }
+/** Personal Project Section **/
 
+/** general **/
+.project-grid{
+    position:relative;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    max-width:100%;
+    list-style:none;
+    text-aign:center;
+}
+
+figure.project-effect {
+    background:#18a367; /** makes the picture kinda tinted green **/
+    position:relative;
+    float:left;
+    overflow:hidden;
+    margin:10px 1%;
+    min-width: 320px;
+    max-width:480px;
+    max-height:360px;
+    width:48%;
+    text-align:center;
+    cursor:pointer;
+}
+
+figure.project-effect img {
+    height:390px;
+    position: relative;
+    display: block;
+    min-height:100%;
+    max-width:100%;
+    opacity:0.8;
+}
+
+figure.project-effect figcaption{
+    padding:2em; /** padding on the top for the writing **/
+    color:#fff;
+    text-transform:uppercase;
+    font-size:1.25em;
+    -webkit-backface-visibility: hidden; /** hiding the backside of a rotated element **/
+    backface-visibility: hidden;
+}
+
+/** Both before and after **/
+figure.project-effect figcaption::before,
+figure.project-effect figcaption::after {
+    position: absolute;
+    content: ''; /** puts an empty blank before and after the figcaption (?) **/
+    opacity:0;
+}
+
+figure.project-effect figcaption::before {
+    top:50px;
+    right:30px;
+    bottom:50px;
+    left:30px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0,1);
+    transform:scale(0,1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0 ;
+}
+
+figure.project-effect figcaption::after {
+    top:50px;
+    right:30px;
+    bottom:50px;
+    left:30px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1,0);
+    transform:scale(1,0);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+
+}
+
+figure.project-effect h2 {
+    padding-top: 26%; /** pushed the Meetup App down **/
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+figure.project-effect p { /** this part makes it so the description does not show up intially **/
+    padding: 0.5em 2em;
+    text-transform:none;
+    opacity:0;
+    -webkit-transform: translate3d(0, -10px, 0);
+    translate3d(0, -10px, 0);
+}
+
+figure.project-effect img,
+figure.project-effect h2 {
+    -webkit-transform: translate3d(0,-30px,0);
+    transform: translate3d(0, -30px, 0);
+}
+
+figure.project-effect img,
+figure.project-effect figcaption::before,
+figure.project-effect figcaption::after,
+figure.project-effect p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.project-effect:hover img { /** when we hover on the image, it moves down **/
+    opacity:0.7;
+    -webkit-transform: translate3d(0,0,0);
+    transform:translate3d(0,0,0);
+}
+
+figure.project-effect:hover figcaption::before, /** adding this cause the white box to appear + image to moe down when you hover over it **/
+figure.project-effect:hover figcaption::after {
+    opacity:1;
+    -webkit-transform: scale(1);
+    transform:scale(1);
+}
+
+figure.project-effect:hover h2, /** causes the text to appear when you hover over the image (inside the box) **/
+figure.project-effect:hover p{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform:translate3d(0,0,0);
+}
+
+figure.project-effect:hover figcaption:after,
+figure.project-effect:hover h2,
+figure.project-effect:hover p,
+figure.project-effect:hover img {
+    -webkit-transition-delay:0.15s;
+    transition-delay:0.15s;
+}
+
+.project-grid figure figcaption,
+.project-grid figure figcaption > a {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.project-grid figure figcaption > a {
+    z-index: 1000;
+    text-indent:200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity:0;
+}
+
+
+.project-grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.project-grid figure h2 span {
+    font-weight: 800;
+}
+
+.project-grid figure h2,
+.project-grid figure p {
+    margin: 0;
+}
+
+.project-grid figure p {
+    letter-spacing: 1px;
+
+}
 .footer {
     background: white;
     text-align:center;
@@ -180,6 +351,7 @@ body {
     color: #555555;
 
 }
+
 .footer-container {
     justify-content: center;
     position: relative;
