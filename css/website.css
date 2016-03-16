@@ -4,7 +4,7 @@ body {
 }
 
 .container-fluid {
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-bottom: 100px;
 	text-align: center;
 	position:relative;
@@ -19,16 +19,15 @@ body {
     font-weight:600;
     flex:none; /** lets all flexible items be the same length **/
     margin:0;
-    text-ident:3px;
     letter-spacing:10px;
     text-transform: uppercase;
     display:inline;  /** inline = can be on the same line as something else **/
-    float:left;
     position:relative;
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-top:20px;
+    text-align:center;
     overflow:hidden;
+    max-width:100%;
+    padding:0;
+    margin:0;
 
 }
 
@@ -173,6 +172,7 @@ body {
     background-color: #8d8d8d;
     color:#fff ;
 }
+
 /** Personal Project Section **/
 
 /** general **/
@@ -180,7 +180,7 @@ body {
     position:relative;
     margin: 0 auto;
     padding: 1em 0 4em;
-    max-width:100%;
+    max-width:1000px;
     list-style:none;
     text-aign:center;
 }
@@ -211,7 +211,6 @@ figure.project-effect img {
 figure.project-effect figcaption{
     padding:2em; /** padding on the top for the writing **/
     color:#fff;
-    text-transform:uppercase;
     font-size:1.25em;
     -webkit-backface-visibility: hidden; /** hiding the backside of a rotated element **/
     backface-visibility: hidden;
@@ -227,10 +226,10 @@ figure.project-effect figcaption::after {
 
 /** these 2 parts decide how the borders are placed **/
 figure.project-effect figcaption::before {
-    top:50px;
-    right:30px;
-    bottom:50px;
-    left:30px;
+    top:40px;
+    right:20px;
+    bottom:40px;
+    left:20px;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     -webkit-transform: scale(0,1);
@@ -240,10 +239,10 @@ figure.project-effect figcaption::before {
 }
 
 figure.project-effect figcaption::after {
-    top:30px;
-    right:50px;
-    bottom:30px;
-    left:50px;
+    top:20px;
+    right:40px;
+    bottom:20px;
+    left:40px;
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
     -webkit-transform: scale(1,0);
@@ -254,7 +253,7 @@ figure.project-effect figcaption::after {
 }
 
 figure.project-effect h2 {
-    padding-top: 26%; /** pushed the Meetup App down **/
+    padding-top: 15%; /** pushed the Meetup App down **/
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
 }
@@ -333,7 +332,7 @@ figure.project-effect:hover img {
 }
 
 .project-grid figure h2 span {
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .project-grid figure h2,
