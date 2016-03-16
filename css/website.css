@@ -225,6 +225,7 @@ figure.project-effect figcaption::after {
     opacity:0;
 }
 
+/** these 2 parts decide how the borders are placed **/
 figure.project-effect figcaption::before {
     top:50px;
     right:30px;
@@ -235,14 +236,14 @@ figure.project-effect figcaption::before {
     -webkit-transform: scale(0,1);
     transform:scale(0,1);
     -webkit-transform-origin: 0 0;
-    transform-origin: 0 0 ;
+    transform-origin: 0 0;
 }
 
 figure.project-effect figcaption::after {
-    top:50px;
-    right:30px;
-    bottom:50px;
-    left:30px;
+    top:30px;
+    right:50px;
+    bottom:30px;
+    left:50px;
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
     -webkit-transform: scale(1,0);
@@ -342,8 +343,10 @@ figure.project-effect:hover img {
 
 .project-grid figure p {
     letter-spacing: 1px;
-
 }
+
+/** Footer **/
+
 .footer {
     background: white;
     text-align:center;
