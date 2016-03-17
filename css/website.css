@@ -4,9 +4,8 @@ body {
 }
 
 .container-fluid {
-	padding-top: 20px;
-	padding-bottom: 100px;
 	text-align: center;
+    height:100vh;
 	position:relative;
 }
 .container-fluid .mini-container {
@@ -15,7 +14,7 @@ body {
 }
 
 .container-fluid .section-title{
-    font-size:20px;
+    font-size:30px;
     font-weight:600;
     flex:none; /** lets all flexible items be the same length **/
     margin:0;
@@ -27,7 +26,6 @@ body {
     overflow:hidden;
     max-width:100%;
     padding:0;
-    margin:0;
 
 }
 
@@ -43,7 +41,7 @@ body {
 
 /** Intro Styling **/
 .header {
-	background-color: #8d8d8d;
+	background-color: #bdbdbd;
 	width: 100%;
 	color: #ffffff;
     height: 100vh;
@@ -68,7 +66,7 @@ body {
 .header-grid {
     min-height: 95vh;
     max-width: calc(100vw);
-    background:#8d8d8d ;
+    background:#bdbdbd ;
     /**background-image: url(https://source.unsplash.com/aOC7TSLb1o8/1640x900); **/
     margin: 20px;
     padding: 100px 0;
@@ -94,7 +92,6 @@ body {
     display: inline-block;
 }
 
-/* Nukun */
 .header-link {
     color: #fff;
     font-weight: 900;
@@ -168,9 +165,14 @@ body {
     background-color: #fff;
     color:black;
 }
-#aboutme, #experience,#school  {
-    background-color: #8d8d8d;
+#aboutme, #experience  {
+    background-color: #e2c8c4  ;
     color:#fff ;
+}
+
+#school {
+    background-color:#c1cbda;
+    color:#ffffff;
 }
 
 /** Personal Project Section **/
