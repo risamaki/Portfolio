@@ -8,35 +8,22 @@ body {
     height:100vh;
 	position:relative;
 }
-.container-fluid .mini-container {
-    padding-top: 30px;
-    padding-bottom: 50px;
-}
 
 .container-fluid .section-title{
     font-size:30px;
-    font-weight:600;
+    font-weight:700;
     flex:none; /** lets all flexible items be the same length **/
     margin:0;
     letter-spacing:10px;
     text-transform: uppercase;
     display:inline;  /** inline = can be on the same line as something else **/
-    position:relative;
+    position:absolute;
     text-align:center;
     overflow:hidden;
     max-width:100%;
     padding:0;
+    margin-top:30px;
 
-}
-
-.col-2 {
-    width:50%;
-    float:left;
-}
-
-.col-3 {
-    width:33.3%;
-    float:left;
 }
 
 /** Intro Styling **/
@@ -165,12 +152,12 @@ body {
     background-color: #fff;
     color:black;
 }
-#project {
+#skills{
     background-color: #e2c8c4  ;
     color:#fff ;
 }
 
-#skills {
+#project {
     background-color: #d7c2d8;
     color:#fff ;
 }
