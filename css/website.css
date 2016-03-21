@@ -169,22 +169,19 @@ body {
 }
 
 #experience-description {
-    font-size:1.2vw;
+    font-size:1.5vw;
     letter-spacing: 0.8px;
     line-height:1.5;
     font-weight:300;
+    max-width:45vw;
+    padding-top:100px;
+    padding-bottom:100px;
+    padding-left: 100px;
 
 }
 
 #experience .col-sm-6 img {
     padding-top:100px;
-    padding-bottom:100px;
-    padding-left: 100px;
-}
-
-#experience .col-sm-6 p {
-    max-width:40vw;
-    padding-top:130px;
     padding-bottom:100px;
     padding-left: 100px;
 }
