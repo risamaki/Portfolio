@@ -9,22 +9,21 @@ body {
 	position:relative;
 }
 
-.container-fluid .section-title{
+.container-fluid .section-title {
     font-size:30px;
     font-weight:700;
-    flex:none; /** lets all flexible items be the same length **/
-    margin:0;
-    letter-spacing:10px;
+    letter-spacing: 10px;
     text-transform: uppercase;
-    display:inline;  /** inline = can be on the same line as something else **/
-    position:absolute;
-    text-align:center;
-    overflow:hidden;
-    max-width:100%;
-    padding:0;
     margin-top:30px;
-
+    padding:0;
+    text-align: center;
+    flex:none;
+    max-width:100%;
+    position:relative; /** absolute makes it so it doesnt take up the whole screen anymore **/
+    overflow:hidden;
+    /** display:inline also makes it not take up the whole width anymore **/
 }
+
 
 /** Intro Styling **/
 .header {
@@ -85,7 +84,7 @@ body {
     text-transform: uppercase;
     overflow: hidden;
     padding: 10px 0;
-    margin-bottom:40px;
+    margin-bottom:80px;
     margin-top:40px;
     -webkit-transition: color 0.3s;
     transition: color 0.3s;
@@ -144,6 +143,15 @@ body {
     color: #fff;
     -webkit-transform: perspective(1000px) rotate3d(0,1,0,180deg);
     transform: perspective(1000px) rotate3d(0,1,0,180deg);
+}
+.description-aboutme {
+    display: inline-block;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position:relative;
+
 }
 
 /** Main Sections **/
