@@ -14,7 +14,7 @@ body {
     font-weight:700;
     letter-spacing: 10px;
     text-transform: uppercase;
-    margin-top:30px;
+    margin-top:100px;
     padding:0;
     text-align: center;
     flex:none;
@@ -24,8 +24,13 @@ body {
     /** display:inline also makes it not take up the whole width anymore **/
 }
 
+.col-sm-6 {
+    position:relative;
+    height:80vh;
+}
 
-/** Intro Styling **/
+
+/********************** Intro/Header Styling **********************/
 .header {
 	background-color: #bdbdbd;
 	width: 100%;
@@ -154,24 +159,42 @@ body {
 
 }
 
-/** Main Sections **/
+/********************** Main Sections **********************/
 
-#experience {
-    background-color: #fff;
-    color:black;
-}
+/** Technical Skills Section **/
+
 #skills{
     background-color: #e2c8c4  ;
     color:#fff ;
 }
 
-#project {
-    background-color: #d7c2d8;
-    color:#fff ;
+/** Work Experience Section **/
+
+#experience {
+    background-color: #fff;
+    color:black;
+}
+
+#experience-description {
+    font-size:1.2vw;
+    letter-spacing: 0.8px;
+    line-height:1.5;
+    font-weight:300;
+
+}
+
+#sap-logo {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
 }
 
 
 /*!** Personal Project Section **!*/
+#project {
+    background-color: #d7c2d8;
+    color:#fff ;
+}
 
 /*!** general **!*/
 /*.project-grid{*/
