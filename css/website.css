@@ -186,6 +186,23 @@ body {
 #skills{
     background-color: #e2c8c4  ;
     color:#fff ;
+    height:45vh;
+}
+
+#skills .section-title{
+    margin-bottom: 5vh;
+}
+
+#know, #learning {
+    font-size:1.6vw;
+    text-align:left;
+    letter-spacing: 0.8px;
+    line-height:1.5;
+    font-weight:300;
+}
+
+#know {
+    float:right;
 }
 
 /** Work Experience Section **/
@@ -197,7 +214,7 @@ body {
 }
 
 #experience-description {
-    font-size:1.3vw;
+    font-size:1.4vw;
     letter-spacing: 0.8px;
     line-height:1.5;
     font-weight:300;
@@ -251,7 +268,7 @@ body {
 
 #project .col-md-4 p,
 #project .col-md-4 a{
-    font-size:1.2vw;
+    font-size:1.4vw;
     color:white;
     margin: 0 auto;
     max-width:18vw;
