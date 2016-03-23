@@ -50,8 +50,8 @@ body {
 .header-grid {
     min-height: 95vh;
     max-width: calc(100vw);
-    background:#bdbdbd ;
-    /**background-image: url(https://source.unsplash.com/aOC7TSLb1o8/1640x900); **/
+    /*background:#bdbdbd ;*/
+    background-image: url(https://source.unsplash.com/7oS_26cb1Wo/1920x1080);
     margin: 20px;
     padding: 100px 0;
     z-index: 1;
@@ -90,7 +90,7 @@ body {
 }
 
 .header-link:hover {
-    color: #1e1a1b;
+    color:black ;
     text-decoration: none;
 }
 
@@ -138,7 +138,7 @@ body {
 }
 
 .header-link:hover span {
-    color: #fff;
+    color: white;
     -webkit-transform: perspective(1000px) rotate3d(0,1,0,180deg);
     transform: perspective(1000px) rotate3d(0,1,0,180deg);
 }
