@@ -176,14 +176,14 @@ body {
     max-width:45vw;
     padding-top: 20vh;
     padding-bottom:20vh;
-    padding-left: 100px;
+    padding-right:15vh;
 
 }
 
 #experience .col-sm-6 img {
     padding-top:22vh;
     padding-bottom:20vh;
-    padding-left: 25vh;
+    padding-left: 30vh;
 }
 
 #experience h3 {
