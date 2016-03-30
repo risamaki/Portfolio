@@ -1,6 +1,7 @@
 .top-menu{
     min-height: 80px;
     background:#fff;
+    z-index: 9999;
 }
 .menu-title {
     font-size: 30px;
