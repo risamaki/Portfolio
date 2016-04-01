@@ -8,7 +8,7 @@ $(document).ready(function() {
         var target = $(this).attr('href');
         // scroll to each target
         $(target).velocity('scroll', {
-            duration: 1500,
+            duration: 1300,
             easing: 'ease-in-out'
         });
     });
