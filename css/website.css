@@ -315,3 +315,9 @@ body {
     color:black;
 
 }
+
+#modal-container {
+    position:relative;
+    margin-top:100px;
+    overflow:hidden;
+}
