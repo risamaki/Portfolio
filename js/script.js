@@ -25,7 +25,7 @@ $(document).ready(function() {
 
     $("#roulette-about").animatedModal({
         modalTarget:'lightSpeedIn',
-        animatedIn:'slideInDown',
+        animatedIn:'fadeInDownBig',
         animatedOut:'zoomOutUp',
         color:'#f7f7f7',
     });

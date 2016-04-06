@@ -38,5 +38,11 @@
 
 
 .close-animatedModal, .close-lightSpeedIn, .close-portfolioModal{
+    padding: 3vh;
     text-align: center;
+    font-size: 1.0vw;
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+    font-weight: 300;
+    text-transform: uppercase;
 }
