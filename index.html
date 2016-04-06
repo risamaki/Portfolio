@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/website.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 </head>
 <body>
@@ -81,21 +82,15 @@
                 <div class="row">
                     <div class="col-md-4" >
                        <div id="meetup">Meetup App // Academic Project</div>
-                        <a id="demo01" href="#animatedModal">DEMO01</a>
-                        <p>An android app that will help students to meet up with other students on campus by matching their locations and class schedules. </p>
-                        <p>Skills & Software used: Java, Android Studio</p>
+                        <a id="meetup-about" class="btn" href="#animatedModal">About</a>
                     </div>
                     <div class="col-md-4" >
                         <div id="roulette">Roulette // nwHacks 2016</div>
-                        <p>A MEAN stack web app that randomizes items that an user inputs. My main contribution was regarding the CSS and general styling of the webpage</p>
-                        <p>Skills & Software used: Git, HTML/CSS</p>
-                        <a href="http://tamakiroulette.herokuapp.com">[ View the website here! ]</a>
+                        <a id="roulette-about" class="btn" href="#lightSpeedIn">About</a>
                     </div>
                     <div class="col-md-4" >
                         <div id="thiswebsite" >This Website // marissatamaki.me</div>
-                        <p>My personal portfolio. </p>
-                        <p>Skills & Software used: HTML/CSS, JavaScript, Git</p>
-                        <a href="https://github.com/risamaki/risamaki.github.io">[ GitHub ]</a>
+                        <a id="portfolio-about" class="btn" href="#portfolioModal">About</a>
                     </div>
                 </div>
             </div>
@@ -118,10 +113,39 @@
     <!-- Modals -->
     <div id="animatedModal">
         <div class="close-animatedModal">
-            Close Modal
+            Close
         </div>
-        <div class="modal-content">
-            <p> Hi</p>
+        <div class="modal-container">
+            <h1>Meetup App</h1>
+            <p>This app was the main project for my second year software engineering class. It is an Android Application that helps students meet up with their peers on campus. It compares both students schedules and find a time and a place (cafe or resturant) in a certain radius where they could both meet up.
+            We utilized the MapQuest APi to find all the possible locations to meetup and we also utilized the FourSquare API to incorprate information about the meetup spot such as name,address, ratings and reviews).
+            The scheduling information of both the user and the random student had to be parsed from an XML file using an SAX parser and the FourSquare API returned a JSON file, which we parsed using a JSON Parser.
+            This app was developed using test-driven development as we were given JUnit tests to base our code on and we were also tasked with writing additional JUnit tests.
+            <p>Skills & Software used: Java, Android Studio, JUnit, API Integration, Genymotion</p>
+        </div>
+    </div>
+
+    <div id="lightSpeedIn">
+        <div class="close-lightSpeedIn">
+            Close
+        </div>
+        <div class="modal-container">
+            <h1>Roulette</h1>
+            <p>Also called Tamaki Roulette. It was made during nwHacks 2016, a 24 hour hackathon that takes place at the University of British Columbia. It is a MEAN stack web app that will randomizes items that the user inputs. You are also able to create an account so you can save the choices and reuse them at another time. We also feature suggestions/examples of what you could input in such as different meal choices or the number 1-100. My main contribution was regarding the CSS and general styling of the webpage. </p>
+            <p>Skills & Software used: Git, HTML/CSS</p>
+            <a href="http://tamakiroulette.herokuapp.com">[ View the website here! ]</a>
+        </div>
+    </div>
+
+    <div id="portfolioModal">
+        <div class="close-portfolioModal">
+            Close
+        </div>
+        <div class="modal-container">
+            <h1>My Personal Website</h1>
+            <p>This website, marissatamaki.me, was made using HTML, CSS and jQuery. To build and style this website I utilized various jQuery plugins (animatedModal.js and velocity.js) and css libraries (animate.css). It was made over the course of 4 months from January 2016 to April 2016. </p>
+            <p>Skills & Software used: HTML/CSS, jQuery, Git</p>
+            <a href="https://github.com/risamaki/risamaki.github.io">[ GitHub ]</a>
         </div>
     </div>
 
@@ -131,7 +155,7 @@
     <script src="js/script.js"></script>
     <script src="js/animatedModal.js"></script>
 <script>
-    $("#demo01").animatedModal();
+
 </script>
 </body>
 </html>

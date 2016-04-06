@@ -238,7 +238,8 @@ body {
 /*!** Personal Project Section **!*/
 #project {
     background-color: #bdbdbd;
-    color:white ;
+    color:#f7f7f7 ;
+    height:70vh;
 }
 
 #project .col-md-4 {
@@ -285,7 +286,7 @@ body {
 /** Footer **/
 
 .footer {
-    background: white;
+    background: #f7f7f7;
     text-align:center;
     margin:20px 20px;
     color: #555555;
@@ -316,8 +317,3 @@ body {
 
 }
 
-#modal-container {
-    position:relative;
-    margin-top:100px;
-    overflow:hidden;
-}

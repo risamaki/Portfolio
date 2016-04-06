@@ -17,9 +17,26 @@ $(document).ready(function() {
         $('body').addClass('loaded');
     }, 3000);
 
+    $("#meetup-about").animatedModal({
+        animatedIn:'lightSpeedIn',
+        animatedOut:'bounceOut',
+        color:'#f7f7f7',
+    });
+
+    $("#roulette-about").animatedModal({
+        modalTarget:'lightSpeedIn',
+        animatedIn:'slideInDown',
+        animatedOut:'zoomOutUp',
+        color:'#f7f7f7',
+    });
+
+    $("#portfolio-about").animatedModal({
+        modalTarget:'portfolioModal',
+        animatedIn:'bounceInLeft',
+        animatedOut:'lightSpeedOut',
+        color:'#f7f7f7',
+    });
+
+
 });
 
-$(document).ready(function() {
-    $("#meetup-about").animatedModal({
-    });
-});

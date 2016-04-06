@@ -1,0 +1,42 @@
+.modal-container h1 {
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 1.5;
+    font-size:3vw;
+    font-weight:700;
+    text-transform: uppercase;
+    text-decoration:none;
+    border-style: dashed;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top:2vh;
+    padding-bottom:2vh;
+}
+
+.modal-container p,a {
+    font-size: 1.4vw;
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 2vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 1vh;
+    align-content: center;
+    display: inherit;
+
+}
+.modal-container a{
+    color:black;
+    text-decoration:none;
+}
+
+.modal-container a:hover {
+    color:#d94f5c;
+}
+
+
+.close-animatedModal, .close-lightSpeedIn, .close-portfolioModal{
+    text-align: center;
+}
