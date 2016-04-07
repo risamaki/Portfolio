@@ -25,15 +25,15 @@ $(document).ready(function() {
 
     $("#roulette-about").animatedModal({
         modalTarget:'lightSpeedIn',
-        animatedIn:'fadeInDownBig',
-        animatedOut:'zoomOutUp',
+        animatedIn:'lightSpeedIn',
+        animatedOut:'bounceOut',
         color:'#f7f7f7',
     });
 
     $("#portfolio-about").animatedModal({
         modalTarget:'portfolioModal',
-        animatedIn:'bounceInLeft',
-        animatedOut:'lightSpeedOut',
+        animatedIn:'lightSpeedIn',
+        animatedOut:'bounceOut',
         color:'#f7f7f7',
     });
 
