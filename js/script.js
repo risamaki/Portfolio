@@ -24,7 +24,7 @@ $(document).ready(function() {
     });
 
     $("#roulette-about").animatedModal({
-        modalTarget:'lightSpeedIn',
+        modalTarget:'rouletteModal',
         animatedIn:'lightSpeedIn',
         animatedOut:'bounceOut',
         color:'#f7f7f7',
