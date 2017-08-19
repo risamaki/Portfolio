@@ -1,0 +1,41 @@
+.header {
+	background-color: #bdbdbd;
+	width: 100%;
+	color: #bdbdbd;
+    height: 100vh;
+    position:relative;
+    position: relative;
+    margin: 0 auto;
+    min-height: 560px;
+}
+
+.bg-img {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.header-grid {
+    min-height: 95vh;
+    max-width: calc(100vw);
+    /*background:#bdbdbd ;*/
+    background-image: url("../img/backgroundimage.jpg");
+    margin: 20px;
+    padding: 100px 0;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-transform: translate3d(0,0,0); /* Solves Safari bug because of SVG clipping mask */
+}
+
