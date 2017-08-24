@@ -2394,11 +2394,13 @@
 
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
+		/* Controls the direction and color of the lines on the side  */
+		/* if you wanna have a background image: url("../../images/igor-son-320878.jpg") */
+		background-image: url("images/dark-bl.svg"), url("images/dark-br.svg");
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		/* changes the size of the lines - not the actual size of the banner section */
+		background-size: 25em, 25em, auto;
 		color: #fff;
 		cursor: default;
 		padding: 6em 0;
@@ -2414,8 +2416,8 @@
 			-webkit-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			background: rgba(52, 27, 43, 0.5);
-			color: #fff;
+			/* background color of the banner box */
+			background:#f7d0d5; 
 			display: inline-block;
 			opacity: 0;
 			padding: 3em;
