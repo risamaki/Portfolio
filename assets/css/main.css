@@ -1551,8 +1551,8 @@
 /* Basic */
 
 	body {
-		background: #F4F3F3;
-		/* background: #f3f6fa; */
+		background: #F8F8F8;
+		/* background: #F8F8F8; */
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -2410,7 +2410,7 @@
 		color: #fff;
 		cursor: default;
 		/* padding:8em 0; */
-		padding: 37.5vh 0;
+		padding: 35.5vh 0;
 		text-align: center;
 	}
 
@@ -2547,7 +2547,7 @@
 
 	#footer {
 		color: #7c8081;
-		padding: 5em 5em 10em 5em;
+		padding: 4vh;
 		text-align: center;
 	}
 
