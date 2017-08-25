@@ -1,154 +1,192 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Marissa Tamaki</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="index">
+		<div id="page-wrapper">
 
-<head>
-	<title> Marissa Tamaki </title>
-	<!-- meta charset ="utf-8"-->
-	<!-- meta "viewport" content="width=device-width, intial-scale=1"-->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/website.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/loader.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-</head>
-<body>
-    
-    <!-- Header -->
-        <div class="header-grid header-color">
-            <a class="link header-link" href="#navbar">Marissa<span>T</span>amaki</a>
-        </div>
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a> Marissa <span>Tamaki</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="#about" class="scrolly" >About</a></li>
+							<li><a href="#employmenthistory" class="scrolly" >Employment History</a></li>
+							<li><a href="#projects" class="scrolly" >Projects</a></li>
+							<li><a href="#footer" class="scrolly" >Contact Me!</a></li>
+						</ul>
+					</nav>
+				</header>
 
-    <!--Nav Bar-->
-    <div class="top-menu" id="navbar">
-        <div class="menu-title">Marissa Tamaki</div>
-        <nav class="menu-effect">
-            <a href="#footer" id="footer-button">Contact Me</a>
-            <a href="#project" id="project-button">Projects</a>
-            <a href="#experience" id="experience-button">Experience</a>
-            <a href="#skills" id="skills-button">Skills</a>
-            <a href="#aboutme" id="aboutme-butotn">About</a>
-        </nav>
-    </div>
+			<!-- Banner w/ My Name-->
+				<section id="banner">
 
-    <!-- Main page -->
-        <div class="main-container">
-            <div class="container-fluid" id="aboutme">
-                <div class="section-title"> About me... </div>
-                <p class="aboutme-description">I am a 3rd year student at the University of British Columbia, pursuing a Combined Major in Computer Science and Microbiology and Immunology. Currently I am on my first co-op term as an Agile Developer at SAP.  When I'm not typing away at my computer, you will find me trying different restaurants all over Vancouver or playing tennis with my friends. </p>
-            </div>
-            <div class="container-fluid" id="skills">
-                <div class="section-title"> Technical Skills </div>
-                <div class="row">
-                    <div class="col-md-6 " >
-                        <ul id="know">
-                            <li>Java</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <ul id="learning">
-                            <li>JavaScript *</li>
-                            <li>C/C++ *</li>
-                            <li>SQL *</li>
-                            <li>Git *</li>
-                        </ul>
-                    </div>
-                    <p>* = Currently Learning</p>
-                </div>
-            </div>
-            <div class ="container-fluid" id="experience">
-                <div class="section-title"> Work Experience </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <img src="img/logo_sap.gif" id="sap-logo"/>
-                    </div>
-                    <div class="col-sm-6" id="experience-description">
-                       <h3> Agile Developer (Jan 2016 - Aug 2016)</h3>
-                        <p> I am a part of the Performance and Reliability team for Cloud for Analytics. I have used various tools and software such as: Selenium, LoadRunner, Jenkins, JIRA, Jmeter and Fiddler </p>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid" id="project">
-                <div class="section-title">Projects</div>
-                <div class="row">
-                    <div class="col-md-4" >
-                       <div id="meetup">Meetup App // Academic Project</div>
-                        <a id="meetup-about" class="btn" href="#animatedModal">About</a>
-                    </div>
-                    <div class="col-md-4" >
-                        <div id="roulette">Roulette // nwHacks 2016</div>
-                        <a id="roulette-about" class="btn" href="#lightSpeedIn">About</a>
-                    </div>
-                    <div class="col-md-4" >
-                        <div id="thiswebsite" >This Website // marissatamaki.me</div>
-                        <a id="portfolio-about" class="btn" href="#portfolioModal">About</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+					<!--
+						".inner" is set up as an inline-block so it automatically expands
+						in both directions to fit whatever's inside it. This means it won't
+						automatically wrap lines, so be sure to use line breaks where
+						appropriate (<br />).
+					-->
+					<div class="inner">
 
-    <!-- Footer -->
-    <div class="footer" id="footer">
-        <div class="footer-container">
-            <div class="copyright_name">
-                <p> &copy 2016 | Marissa Tamaki</p>
-            </div>
-            <div class="email">
-                <i class="fa fa-envelope fa-1x"></i> tamaki.marissa@gmail.com
-            </div>
-                <a href="https://github.com/risamaki" class="fa fa-github-alt fa-2x"></a>
-                <a href="https://ca.linkedin.com/in/marissa-tamaki-187124119" class="fa fa-linkedin fa-2x"></a>
-        </div>
-    </div>
+						<header>
+							<h2>MARISSA TAMAKi</h2>
+						</header>
+						<p>Welcome to my website! </p>
+					</div>
+				</section>
+					<div class="mouse-icon">
+							<div class="scroll"></div>
+					</div>
+			<!-- Main -->
+				<article id="main">
+					
+					<!-- About Me -->
+					<header id="about" class="special container">
+						<span class="icon fa-bar-chart-o"></span>
+						<h2>As this is my <strong>twentieth</strong> freebie for HTML5 UP
+						<br />
+						I decided to give it a really creative name.</h2>
+						<p>Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
+						<br />
+						it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
+						and, like all my stuff,
+						<br />
+						released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>
+					</header>
 
-    <!-- Modals -->
-    <div id="animatedModal">
-        <div class="close-animatedModal">
-            Close
-        </div>
-        <div class="modal-container">
-            <h1>Meetup App</h1>
-            <p>An Android Application that helps students meet up with their peers on campus. It compares both students schedules to find a time and place (cafe or resturant) in a certain radius where they could both meet up.
-            We utilized the MapQuest API to find all the possible locations to meetup and the FourSquare API to incorprate information about the meetup spot such as name,address, ratings and reviews.
-            <p>Skills & Software used: Java, Android Studio, JSON and XML Parsing, API Integration</p>
-            <p>Testing: JUnit</p>
-        </div>
-    </div>
+					<!-- Employment History  -->
+						<section id="employmenthistory" class="wrapper style2 container special-alt">
+							<div class="row 50%">
+								<div class="8u 12u(narrower)">
 
-    <div id="lightSpeedIn">
-        <div class="close-lightSpeedIn">
-            Close
-        </div>
-        <div class="modal-container">
-            <h1>Roulette</h1>
-            <p>A MEAN stack web app that will randomizes items that the user inputs. You can also create an account to save the choices and reuse them at another time. We also feature suggestions/examples of what you could input. My main contribution was regarding the CSS and general styling of the webpage. </p>
-            <p>Skills & Software used: Git, HTML/CSS</p>
-            <a href="http://tamakiroulette.herokuapp.com">[ View the website here! ]</a>
-        </div>
-    </div>
+									<header>
+										<h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
+									</header>
+									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
+									<footer>
+										<ul class="buttons">
+											<li><a href="#" class="button">Find Out More</a></li>
+										</ul>
+									</footer>
 
-    <div id="portfolioModal">
-        <div class="close-portfolioModal">
-            Close
-        </div>
-        <div class="modal-container">
-            <h1>My Personal Website</h1>
-            <p>This website, marissatamaki.me, was made using HTML, CSS and jQuery. To build and style this website I utilized various jQuery plugins (animatedModal.js and velocity.js) and css libraries (animate.css). It was made over the course of 4 months from January 2016 to April 2016. </p>
-            <p>Skills & Software used: HTML/CSS, jQuery, Git</p>
-            <a href="https://github.com/risamaki/risamaki.github.io">[ GitHub ]</a>
-        </div>
-    </div>
+								</div>
+								<div class="4u 12u(narrower) important(narrower)">
 
-    <!-- Scripts -->
-    <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
-    <script src="js/velocity.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/animatedModal.js"></script>
-<script>
+									<ul class="featured-icons">
+										<li><span class="icon fa-clock-o"><span class="label">Feature 1</span></span></li>
+										<li><span class="icon fa-volume-up"><span class="label">Feature 2</span></span></li>
+										<li><span class="icon fa-laptop"><span class="label">Feature 3</span></span></li>
+										<li><span class="icon fa-inbox"><span class="label">Feature 4</span></span></li>
+										<li><span class="icon fa-lock"><span class="label">Feature 5</span></span></li>
+										<li><span class="icon fa-cog"><span class="label">Feature 6</span></span></li>
+									</ul>
 
-</script>
-</body>
+								</div>
+							</div>
+						</section>
+
+					<!-- Projects -->
+						<section id="projects" class="wrapper style3 container special">
+
+							<header class="major">
+								<h2>Next look at this <strong>cool stuff</strong></h2>
+							</header>
+
+							<div class="row">
+								<div class="6u 12u(narrower)">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+										<header>
+											<h3>A Really Fast Train</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+									</section>
+
+								</div>
+								<div class="6u 12u(narrower)">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+										<header>
+											<h3>An Airport Terminal</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+									</section>
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="6u 12u(narrower)">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<header>
+											<h3>Hyperspace Travel</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+									</section>
+
+								</div>
+								<div class="6u 12u(narrower)">
+
+									<section>
+										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+										<header>
+											<h3>And Another Train</h3>
+										</header>
+										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+									</section>
+
+								</div>
+							</div>
+
+							<footer class="major">
+								<ul class="buttons">
+									<li><a href="#" class="button">See More</a></li>
+								</ul>
+							</footer>
+
+						</section>
+
+				</article>
+			<!-- Footer w/ Social Media Links -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Marissa Tamaki</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
