@@ -2404,13 +2404,12 @@
 		/* dimmensions for the picctures hould be 2000 x 1100 */
 		url("../../images/banner_unsplash.jpeg");
 		background-position: bottom left, bottom right, top left, top center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+		background-repeat: no-repeat, no-repeat,repeat, no-repeat;
 		/* changes the size of the lines - not the actual size of the banner section */
 		background-size: 25em, 25em, auto;
 		color: #fff;
 		cursor: default;
-		/* padding:8em 0; */
-		padding: 35.5vh 0;
+		padding: 35.5vh;
 		text-align: center;
 	}
 
