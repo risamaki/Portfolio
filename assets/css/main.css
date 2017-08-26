@@ -2400,9 +2400,8 @@
 		/* Controls the direction and color of the lines on the side  */		
 		background-image: url("images/dark-bl.svg"), url("images/dark-br.svg"), 
 		
-		/* https://source.unsplash.com/{PHOTO ID}/{WIDTHxHEIGHT} */
-		/* dimmensions for the picctures hould be 2000 x 1100 */
-		url("../../images/banner_unsplash.jpeg");
+		/* Photo ID: 8ioenvmof-I, 2000 x 1100 */
+		url("../../images/banner_unsplash.jpeg"); 
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat,repeat, no-repeat;
 		/* changes the size of the lines - not the actual size of the banner section */
