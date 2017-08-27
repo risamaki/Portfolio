@@ -1551,7 +1551,7 @@
 /* Basic */
 
 	body {
-		background: #F8F8F8;
+		background:#fff;
 		/* background: #F8F8F8; */
 	}
 
@@ -2099,11 +2099,31 @@
 /* Wrapper */
 
 	.wrapper {
-		margin-bottom: 1em;
-		padding: 3em;
+		margin-bottom: 3em;
+		padding-top: 7em;
+		position: relative;
 	}
+
+		.wrapper:before, .wrapper:after {
+			border-bottom: solid 1.5px;
+			border-top: solid 1.5px;
+			content: '';
+			height: 7px;
+			opacity: 0.2;
+			position: absolute;
+			top: 1.75em;
+			width: 50%;
+		}
+
+		.wrapper:before {
+			left: 0;
+		}
+
+		.wrapper:after {
+			right: 0;
+		}
 		.wrapper.style2 {
-			background-color: #b3e2df;
+			/* background-color: #b3e2df; */
 			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
@@ -2580,7 +2600,7 @@
 
 			header.special {
 				padding-top: 5.5em;
-				margin-bottom: 4em;
+				margin-bottom: 3em;
 			}
 
 	}
@@ -2612,15 +2632,6 @@
 			}
 
 		/* Wrapper */
-
-			.wrapper {
-				margin-bottom: 4em;
-				padding: 4em 3em;
-			}
-
-				.wrapper.style4 {
-					padding: 3em;
-				}
 
 		/* Header */
 
@@ -2692,11 +2703,13 @@
 				}
 
 				.wrapper.style1 {
-					padding: 0 2.5em;
+					padding-left: 2.5em;
+					padding-right: 2.5em;
 				}
 
 				.wrapper.style2 {
-					background-size: 15em;
+					padding-left: 2.5em;
+					padding-right: 2.5em;
 				}
 
 				.wrapper.style4 {
@@ -2816,9 +2829,17 @@
 				text-align: center;
 			}
 
-			.wrapper.style4 {
-				padding-bottom: 3em;
+			.wrapper {
+				/* margin-bottom: 2em;
+				padding-top: 5em; */
+				margin-bottom: 1em;
+				padding-top: 5em;
+				padding-bottom: 1em;
 			}
+
+				.wrapper:before, .wrapper:after {
+					width: 50%;
+				}
 
 		/* Main */
 
@@ -3047,7 +3068,7 @@
 			}
 
 			p {
-				text-align: justify;
+				text-align: left;
 			}
 
 		/* Section/Article */
@@ -3121,28 +3142,17 @@
 			}
 
 		/* Wrapper */
-
 			.wrapper {
-				margin-bottom: 2.5em;
-				padding: 2.25em 1.5em;
+				margin-bottom: 3em;
+				padding-left: 1.5em;
+				padding-right: 1.5em;
 			}
+				.wrapper:before, .wrapper:after {
+					width: 50%;
+				}
 
 				.wrapper.special br {
 					display: none;
-				}
-
-				.wrapper.style1 {
-					padding: 0 1.5em;
-				}
-
-				.wrapper.style2 {
-					background-size: 10em;
-					padding: 2.25em 1.5em;
-				}
-
-				.wrapper.style4 {
-					background-size: 10em;
-					padding: 1.5em 1.5em 3em 1.5em;
 				}
 
 		/* Banner */
@@ -3150,6 +3160,7 @@
 			#banner {
 				background-size: 10em, 10em, auto, cover;
 				padding: 6em 0;
+				color: #7c8081;
 			}
 
 				#banner .inner {
