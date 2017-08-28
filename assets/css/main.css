@@ -2406,13 +2406,13 @@
 		/* Controls the direction and color of the lines on the side  */		
 		background-image: url("images/dark-bl.svg"), url("images/dark-br.svg"), 
 		
-		/* Photo ID: 8ioenvmof-I, 2000 x 1100 */
+		/* Photo ID: 8ioenvmof-I, 1920 x 1080 */
 		url("../../images/banner_unsplash.jpeg"); 
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat,repeat, no-repeat;
-		/* changes the size of the lines - not the actual size of the banner section */
-		background-size: 25em, 25em, auto;
-		color: #fff;
+		/* each corresponds to the respective image */
+		background-size: 25em, 25em, cover;
+		color: #f8f8f8;
 		cursor: default;
 		padding: 35.5vh;
 		text-align: center;
