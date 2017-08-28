@@ -1851,30 +1851,21 @@
 				top: -0.2em;
 			}
 
-			.icon.circle.fa-twitter {
+			.icon.circle.fa-linkedin {
 				background: #70aecd;
 				color: #fff;
 			}
 
-				.icon.circle.fa-twitter:hover {
+				.icon.circle.fa-linkedin:hover {
 					background: #7fb7d2;
 				}
-
-			.icon.circle.fa-facebook {
-				background: #7490c3;
-				color: #fff;
-			}
-
-				.icon.circle.fa-facebook:hover {
-					background: #829bc9;
-				}
-
-			.icon.circle.fa-google-plus {
+				
+			.icon.circle.fa-flickr {
 				background: #db6b67;
 				color: #fff;
 			}
 
-				.icon.circle.fa-google-plus:hover {
+				.icon.circle.flickr:hover {
 					background: #df7b77;
 				}
 
@@ -1887,12 +1878,12 @@
 					background: #e1b89b;
 				}
 
-			.icon.circle.fa-dribbble {
+			.icon.circle.fa-instagram {
 				background: #da83ae;
 				color: #fff;
 			}
 
-				.icon.circle.fa-dribbble:hover {
+				.icon.circle.fa-instagram:hover {
 					background: #df93b8;
 				}
 
@@ -2479,37 +2470,7 @@
 			#banner .inner footer {
 				margin: 2em 0 0 0;
 			}
-		
-		/* Referenced from the free template provided by http://blog.themearmada.com/demos/snow/ */
-		.mouse-icon {
-			border: 2px solid rgba(124, 128, 129, 0.3);
-			border-radius: 16px;
-			display: block;
-			height: 50px;
-			margin: -100px auto 50px;
-			position: relative;
-			width: 30px;
-			z-index: 10;
-		}
-		.mouse-icon .scroll {
-			animation-delay: 0s;
-			animation-duration: 1s;
-			animation-iteration-count: infinite;
-			animation-name: scrolling;
-			animation-play-state: running;
-			animation-timing-function: linear;
-		}
-		.mouse-icon .scroll {
-			background: rgba(124, 128, 129, 0.3) none repeat scroll 0 0;
-			border-radius: 10px;
-			height: 10px;
-			margin-left: auto;
-			margin-right: auto;
-			position: relative;
-			top: 4px;
-			width: 4px;
-		}
-
+	
 			@keyframes scrolling {
 					0% {
 						opacity: 0;
