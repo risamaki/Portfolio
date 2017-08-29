@@ -2361,131 +2361,129 @@
 
 /* Banner */
 
-	@-moz-keyframes reveal-banner {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
-	@-webkit-keyframes reveal-banner {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
-	@-ms-keyframes reveal-banner {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
-	@keyframes reveal-banner {
-		0% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
-	}
-
-	#banner {
-		background-attachment: scroll, scroll, scroll, fixed;
+	/* Reference: https://html5up.net/uploads/demos/spectral/ */
+	#banner {	
+		background-attachment: scroll, scroll, scroll, scroll;
 		/* Controls the direction and color of the lines on the side  */		
 		background-image: url("images/dark-bl.svg"), url("images/dark-br.svg"), 
-		
 		/* Photo ID: 8ioenvmof-I, 1920 x 1080 */
 		url("../../images/banner_unsplash.jpeg"); 
 		background-position: bottom left, bottom right, top left, top center;
-		background-repeat: no-repeat, no-repeat,repeat, no-repeat;
+		background-repeat: no-repeat, no-repeat,no-repeat, no-repeat;
 		/* each corresponds to the respective image */
 		background-size: 25em, 25em, cover;
-		color: #f8f8f8;
+		color: black;
 		cursor: default;
-		padding: 35.5vh;
+		padding: 35vh;
 		text-align: center;
 	}
-
 		#banner .inner {
-			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
-			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
-			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
-			animation: reveal-banner 1s 0.25s ease-in-out;
-			-moz-animation-fill-mode: forwards;
-			-webkit-animation-fill-mode: forwards;
-			-ms-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;
 			/* background color of the banner box */
 			background:#f7d0d5; 
-			display: inline-block;
-			opacity: 0;
 			padding: 3em;
 			text-align: center;
+			display: inline-block;
 		}
-
-			#banner .inner header {
-				display: inline-block;
-				border-bottom: solid 2px;
-				border-top: solid 2px;
-				margin: 0 0 2em 0;
-				padding: 3px 0 3px 0;
-			}
-
-				#banner .inner header h2 {
-					border-bottom: solid 2px;
-					border-top: solid 2px;
+				#banner h2 {
+					-moz-transform: scale(1);
+					-webkit-transform: scale(1);
+					-ms-transform: scale(1);
+					transform: scale(1);
+					-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+					-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+					-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+					transition: transform 0.5s ease, opacity 0.5s ease;
+					display: inline-block;
 					font-size: 2.5em;
 					font-weight: 900;
 					letter-spacing: 0.2em;
-					margin: 0;
 					padding-left: 0.05em;
-					position: relative;
 					text-transform: uppercase;
+					opacity: 1;
+					padding: 0.35em 1em;
+					position: relative;
+					z-index: 1;
 				}
 
-			#banner .inner p {
+				#banner h2:before, #banner h2:after {
+					-moz-transition: width 0.85s ease;
+					-webkit-transition: width 0.85s ease;
+					-ms-transition: width 0.85s ease;
+					transition: width 0.85s ease;
+					-moz-transition-delay: 0.25s;
+					-webkit-transition-delay: 0.25s;
+					-ms-transition-delay: 0.25s;
+					transition-delay: 0.25s;
+					background: #7c8081;
+					content: '';
+					display: block;
+					height: 2px;
+					position: absolute;
+					width: 100%;
+				}
+	
+				#banner h2:before {
+					top: 0;
+					left: 0;
+				}
+	
+				#banner h2:after {
+					bottom: 0;
+					right: 0;
+				}
+
+			#banner p {
 				letter-spacing: 0.1em;
 				margin: 0;
 				text-transform: uppercase;
 			}
 
-				#banner .inner p a {
+				#banner p a {
 					color: inherit;
 					font-weight: 400;
 					text-decoration: none;
 				}
 
-			#banner .inner footer {
-				margin: 2em 0 0 0;
-			}
-	
-			@keyframes scrolling {
-					0% {
-						opacity: 0;
-						top: 5px;
-					}
-					30% {
-						opacity: 1;
-						top: 10px;
-					}
-					100% {
-						opacity: 0;
-						top: 25px;
-					}
-				}
+		#banner:after {
+			-moz-pointer-events: none;
+			-webkit-pointer-events: none;
+			-ms-pointer-events: none;
+			pointer-events: none;
+			-moz-transition: opacity 3s ease-in-out;
+			-webkit-transition: opacity 3s ease-in-out;
+			-ms-transition: opacity 3s ease-in-out;
+			transition: opacity 3s ease-in-out;
+			-moz-transition-delay: 1.00s;
+			-webkit-transition-delay: 1.00s;
+			-ms-transition-delay: 1.00s;
+			transition-delay: 1.00s;
+			content: '';
+			background: white;
+			display: flex;
+			width: 100%;
+			height: 120%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			opacity: 0;
+		}
+		
 
+	body.is-loading #banner h2 {
+		-moz-transform: scale(0.95);
+		-webkit-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+		transform: scale(0.95);
+		opacity: 0;
+	}
+
+		body.is-loading #banner h2:before, body.is-loading #banner h2:after {
+			width: 0;
+		}
+
+	body.is-loading #banner:after {
+		opacity: 1;
+	}
 /* Main */
 
 	#main {
